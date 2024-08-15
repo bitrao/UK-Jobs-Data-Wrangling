@@ -9,7 +9,7 @@ UK JOBS DATA PARSING AND WRANGLING
 * matplotlib
 * ElementTree
 
-The first notebook goal is to parse the jobs data in a provided ***xml file*** that is collected from multiple jobs websites in UK such as 'totaljobs.com', 'jobsite.co.uk'... from 2012 to 2014 into a dataset following the format: 
+[The first notebook](../main/Jobs-Data-Parsing-and-Cleaning.ipynb) goal is to parse the jobs data in a provided ***xml file*** that is collected from multiple jobs websites in UK such as 'totaljobs.com', 'jobsite.co.uk'... from 2012 to 2014 into a dataset following the format: 
 
 Column         | Description
 ---------------|-----------------------------------------------------------------------------------------------------
@@ -28,17 +28,15 @@ SourceName     | [String] If there is no source information, the value should be
 Each variables are handled and cleaned so that they stricly follow the required format. Other data problems are also put into consideration and proper methods for each are applied.
 
 
-The second notebook goal is merging the cleaned dataset with new dataset that are from 'www.jobhuntlisting.com'. 
+[The second notebook](../main/Jobs-Data-Integration.ipynb) goal is merging the cleaned dataset with new dataset that are from 'www.jobhuntlisting.com'. 
 However, the dataset is in different format, schematic mapping is applied to resolve the conflict before merging. 
 Data conflicts are also considered and handled.
 
 
-
-
 Output of this project includes:
-- **cleaned_dataset1.csv**: A csv of the cleaned following the requirements dataset.
+- [**cleaned_dataset1.csv**](../main/cleaned_dataset1.csv): A csv of the cleaned following the requirements dataset.
 
-- **errors_list.csv**: A csv that stores all the modification as cleaning attempts. Under the following format:
+- [**errors_list.csv**](../main/errors_list.csv): A csv that stores all the modification as cleaning attempts. Under the following format:
 
 Column         | Description
 ---------------|-----------------------------------------------------------------------------------------------------
@@ -51,7 +49,7 @@ ErrorType      | The type of errors, for example, Missing Values, Violation of I
 Fixing         | Describe how did you fix this problem
 
 
-- **dataset_integrated.csv**: A csv of the result dataset from integration of the cleaned dataset and the additional dataset.
+- [**dataset_integrated.csv**](../main/dataset_integrated.csv): A csv of the result dataset from integration of the cleaned dataset and the additional dataset.
 
 
 *Assignment 2 of RMIT COSC3015 Advanced Programming for Data Science*
